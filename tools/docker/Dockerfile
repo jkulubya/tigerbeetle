@@ -11,6 +11,6 @@ RUN apk add --no-cache tini
 # same TigerBeetle binary we publish as our release, we don't build inside a container, and copy a
 # pre-existing binary instead.
 ARG TARGETARCH
-COPY tigerbeetle-${TARGETARCH} /tigerbeetle
+COPY tigerbeetle /tigerbeetle/
 
-ENTRYPOINT ["tini", "--", "/tigerbeetle"]
+ENTRYPOINT ["tini", "--", "/tigerbeetle/tigerbeetle"]

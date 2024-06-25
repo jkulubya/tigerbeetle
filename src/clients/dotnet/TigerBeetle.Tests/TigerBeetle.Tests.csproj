@@ -10,6 +10,7 @@
     <SelfContained>false</SelfContained>
     <RollForward>LatestMajor</RollForward>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="3.2.0">
